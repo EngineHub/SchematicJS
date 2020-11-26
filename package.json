@@ -1,0 +1,40 @@
+{
+    "name": "@enginehub/schematicjs",
+    "version": "0.0.1",
+    "description": "A TypeScript/JavaScript library for loading and saving WorldEdit schematics",
+    "main": "dist/index.js",
+    "files": [
+        "dist/"
+    ],
+    "scripts": {
+        "prepublish": "rm -rf dist && tsc",
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postinstall": "patch-package",
+        "start": "parcel test/test.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/EngineHub/SchematicJS.git"
+    },
+    "author": "EngineHub",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/EngineHub/SchematicJS/issues"
+    },
+    "homepage": "https://github.com/EngineHub/SchematicJS#readme",
+    "dependencies": {
+        "gzip-js": "^0.3.2",
+        "nbt-ts": "^1.3.3",
+        "patch-package": "^6.2.2",
+        "postinstall-postinstall": "^2.1.0",
+        "zlibt": "^0.0.5"
+    },
+    "devDependencies": {
+        "@types/gzip-js": "^0.3.1",
+        "parcel-bundler": "^1.12.4",
+        "prettier": "^2.1.2",
+        "ts-loader": "^8.0.4",
+        "typescript": "^4.0.3"
+    }
+}
