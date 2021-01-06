@@ -15,20 +15,30 @@ export function loadSchematic(tag: Tag): Schematic {
             key = key.substring(colonIndex + 1);
         }
 
+        const properties = {};
+
         let bracketIndex = key.indexOf('[');
+        let type: string;
         if (bracketIndex !== -1) {
-            key = key.substring(0, bracketIndex);
+            type = key.substring(0, bracketIndex);
+            const propertyArea = key.substring(
+                bracketIndex + 1,
+                key.length - 1
+            ) as string;
+            propertyArea.split(',').forEach(prop => {
+                const pair = prop.split('=');
+                properties[pair[0]] = pair[1];
+            });
+        } else {
+            type = key;
         }
 
-        palette.set(value.value, { type: key });
+        palette.set(value.value, { type, properties });
     }
 
-    const schematic = new Schematic(
-        width,
-        height,
-        length,
-        [...palette.values()].map(key => key.type)
-    );
+    const schematic = new Schematic(width, height, length, [
+        ...palette.values()
+    ]);
     let index = 0;
     let i = 0;
     while (i < blocks.length) {
