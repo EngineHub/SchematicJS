@@ -5,13 +5,13 @@ export class Schematic implements Iterable<BlockVector3> {
     height: number;
     length: number;
     blocks: Block[][][];
-    blockTypes: string[];
+    blockTypes: Block[];
 
     constructor(
         width: number,
         height: number,
         length: number,
-        blockTypes: string[]
+        blockTypes: Block[]
     ) {
         this.width = width;
         this.height = height;
@@ -80,4 +80,5 @@ export interface BlockVector3 {
 
 export interface Block {
     type: string;
+    properties: { [property: string]: string };
 }
