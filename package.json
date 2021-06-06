@@ -1,6 +1,6 @@
 {
     "name": "@enginehub/schematicjs",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A TypeScript/JavaScript library for loading and saving WorldEdit schematics",
     "main": "dist/index.js",
     "files": [
@@ -26,15 +26,15 @@
     "dependencies": {
         "gzip-js": "^0.3.2",
         "nbt-ts": "^1.3.3",
-        "patch-package": "^6.2.2",
+        "patch-package": "^6.4.7",
         "postinstall-postinstall": "^2.1.0",
         "zlibt": "^0.0.5"
     },
     "devDependencies": {
-        "@types/gzip-js": "^0.3.1",
-        "parcel-bundler": "^1.12.4",
-        "prettier": "^2.1.2",
-        "ts-loader": "^8.0.4",
-        "typescript": "^4.0.3"
+        "@types/gzip-js": "^0.3.2",
+        "parcel-bundler": "^1.12.5",
+        "prettier": "^2.3.1",
+        "ts-loader": "^9.2.3",
+        "typescript": "^4.3.2"
     }
 }
