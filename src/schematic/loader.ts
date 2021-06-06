@@ -7,7 +7,6 @@ export function loadSchematic(tag: Tag): Schematic {
 
     switch (version) {
         case 1:
-            throw new Error('Oopsy');
         case 2:
             return loadVersion2(tag);
         case 3:
