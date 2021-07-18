@@ -1,5 +1,5 @@
-import { Int, Short, Tag, TagMap } from "nbt-ts";
-import { Block, Schematic } from "../types"
+import { Int, Short, Tag, TagMap } from 'nbt-ts';
+import { Block, Schematic } from '../types';
 
 export function loadVersion3(tag: Tag): Schematic {
     const blocksContainer = (tag as any).get('Blocks') as TagMap;
@@ -7,9 +7,12 @@ export function loadVersion3(tag: Tag): Schematic {
     const width = ((tag as any).get('Width') as Short).value;
     const height = ((tag as any).get('Height') as Short).value;
     const length = ((tag as any).get('Length') as Short).value;
+    const dataVersion = ((tag as any).get('DataVersion') as Int).value;
 
     const palette = new Map<number, Block>();
-    for (let [key, value] of (blocksContainer.get('Palette') as TagMap).entries()) {
+    for (let [key, value] of (
+        blocksContainer.get('Palette') as TagMap
+    ).entries()) {
         // sanitize the block name
         let colonIndex = key.indexOf(':');
         if (colonIndex !== -1) {
@@ -37,9 +40,13 @@ export function loadVersion3(tag: Tag): Schematic {
         palette.set((value as Int).value, { type, properties });
     }
 
-    const schematic = new Schematic(width, height, length, [
-        ...palette.values()
-    ]);
+    const schematic = new Schematic({
+        width,
+        height,
+        length,
+        blockTypes: [...palette.values()],
+        dataVersion,
+    });
     let index = 0;
     let i = 0;
     while (i < blocks.length) {

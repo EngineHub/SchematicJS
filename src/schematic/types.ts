@@ -1,22 +1,33 @@
 import { make3DArray } from '../util/array';
 
+interface SchematicOptions {
+    width: number;
+    height: number;
+    length: number;
+    blockTypes: Block[];
+    dataVersion?: number;
+}
+
 export class Schematic implements Iterable<BlockVector3> {
     width: number;
     height: number;
     length: number;
     blocks: Block[][][];
     blockTypes: Block[];
+    dataVersion?: number;
 
-    constructor(
-        width: number,
-        height: number,
-        length: number,
-        blockTypes: Block[]
-    ) {
+    constructor({
+        width,
+        height,
+        length,
+        blockTypes,
+        dataVersion
+    }: SchematicOptions) {
         this.width = width;
         this.height = height;
         this.length = length;
         this.blockTypes = blockTypes;
+        this.dataVersion = dataVersion;
 
         this.blocks = make3DArray(width, height, length);
     }
