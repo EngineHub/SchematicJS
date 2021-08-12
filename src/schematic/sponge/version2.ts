@@ -1,12 +1,17 @@
 import { Int, Short, Tag } from 'nbt-ts';
 import { Block, Schematic } from '../types';
 
+const DEFAULT_DV = 1913;
+
 export function loadVersion2(tag: Tag): Schematic {
     const blocks = (tag as any).get('BlockData') as Buffer;
     const width = ((tag as any).get('Width') as Short).value;
     const height = ((tag as any).get('Height') as Short).value;
     const length = ((tag as any).get('Length') as Short).value;
-    const dataVersion = ((tag as any).get('DataVersion') as Int).value;
+    const dvTag = (tag as any).get('DataVersion') as Int;
+    const dataVersion = dvTag
+        ? ((tag as any).get('DataVersion') as Int).value
+        : DEFAULT_DV;
 
     const palette = new Map<number, Block>();
     for (let [key, value] of (tag as any).get('Palette').entries()) {
@@ -42,7 +47,7 @@ export function loadVersion2(tag: Tag): Schematic {
         height,
         length,
         blockTypes: [...palette.values()],
-        dataVersion,
+        dataVersion
     });
     let index = 0;
     let i = 0;
