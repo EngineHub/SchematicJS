@@ -10,18 +10,19 @@ export function loadVersion3(tag: Tag): Schematic {
     const dataVersion = ((tag as any).get('DataVersion') as Int).value;
 
     const palette = new Map<number, Block>();
+    // eslint-disable-next-line prefer-const
     for (let [key, value] of (
         blocksContainer.get('Palette') as TagMap
     ).entries()) {
         // sanitize the block name
-        let colonIndex = key.indexOf(':');
+        const colonIndex = key.indexOf(':');
         if (colonIndex !== -1) {
             key = key.substring(colonIndex + 1);
         }
 
         const properties = {};
 
-        let bracketIndex = key.indexOf('[');
+        const bracketIndex = key.indexOf('[');
         let type: string;
         if (bracketIndex !== -1) {
             type = key.substring(0, bracketIndex);
@@ -53,6 +54,7 @@ export function loadVersion3(tag: Tag): Schematic {
         let value = 0;
         let varintLength = 0;
 
+        // eslint-disable-next-line no-constant-condition
         while (true) {
             value |= (blocks[i] & 127) << (varintLength++ * 7);
             if (varintLength > 5) {
@@ -65,9 +67,9 @@ export function loadVersion3(tag: Tag): Schematic {
             i++;
         }
 
-        let y = Math.floor(index / (width * length));
-        let z = Math.floor((index % (width * length)) / width);
-        let x = (index % (width * length)) % width;
+        const y = Math.floor(index / (width * length));
+        const z = Math.floor((index % (width * length)) / width);
+        const x = (index % (width * length)) % width;
 
         index++;
 
