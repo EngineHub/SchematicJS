@@ -41,7 +41,6 @@ export function loadStructure(tag: TagMap): Schematic {
 
         palette.set(parseInt(paletteIndex), { type, properties });
     }
-    console.log(palette);
 
     const schematic = new Schematic({
         width,
