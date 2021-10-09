@@ -4,6 +4,13 @@ import { loadVersion2, loadVersion3 } from './sponge';
 import { SchematicType } from '.';
 import { loadStructure } from './structure';
 
+/**
+ * Load a schematic given an NBT Tag.
+ * 
+ * @param tag The tag
+ * @param type The schematic type, or undefined to auto-detect.
+ * @returns A {@link Schematic}.
+ */
 export function loadSchematic(tag: TagMap, type?: SchematicType): Schematic {
     if (!type) {
         if (tag.get('BlockData') || tag.get('Blocks')) {
