@@ -1,21 +1,21 @@
-import { Int, Short, Tag } from 'nbt-ts';
+import { Int, Short, TagMap } from 'nbt-ts';
 import { Block, Schematic } from '../types';
 
 const DEFAULT_DV = 1913;
 
-export function loadVersion2(tag: Tag): Schematic {
-    const blocks = (tag as any).get('BlockData') as Buffer;
-    const width = ((tag as any).get('Width') as Short).value;
-    const height = ((tag as any).get('Height') as Short).value;
-    const length = ((tag as any).get('Length') as Short).value;
-    const dvTag = (tag as any).get('DataVersion') as Int;
+export function loadVersion2(tag: TagMap): Schematic {
+    const blocks = tag.get('BlockData') as Buffer;
+    const width = (tag.get('Width') as Short).value;
+    const height = (tag.get('Height') as Short).value;
+    const length = (tag.get('Length') as Short).value;
+    const dvTag = tag.get('DataVersion') as Int;
     const dataVersion = dvTag
-        ? ((tag as any).get('DataVersion') as Int).value
+        ? (tag.get('DataVersion') as Int).value
         : DEFAULT_DV;
 
     const palette = new Map<number, Block>();
     // eslint-disable-next-line prefer-const
-    for (let [key, value] of (tag as any).get('Palette').entries()) {
+    for (let [key, value] of (tag.get('Palette') as TagMap).entries()) {
         // sanitize the block name
         const colonIndex = key.indexOf(':');
         if (colonIndex !== -1) {
@@ -40,7 +40,7 @@ export function loadVersion2(tag: Tag): Schematic {
             type = key;
         }
 
-        palette.set(value.value, { type, properties });
+        palette.set((value as Int).value, { type, properties });
     }
 
     const schematic = new Schematic({

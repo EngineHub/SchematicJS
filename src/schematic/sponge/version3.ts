@@ -1,13 +1,13 @@
-import { Int, Short, Tag, TagMap } from 'nbt-ts';
+import { Int, Short, TagMap } from 'nbt-ts';
 import { Block, Schematic } from '../types';
 
-export function loadVersion3(tag: Tag): Schematic {
-    const blocksContainer = (tag as any).get('Blocks') as TagMap;
+export function loadVersion3(tag: TagMap): Schematic {
+    const blocksContainer = tag.get('Blocks') as TagMap;
     const blocks = blocksContainer.get('Data') as Buffer;
-    const width = ((tag as any).get('Width') as Short).value;
-    const height = ((tag as any).get('Height') as Short).value;
-    const length = ((tag as any).get('Length') as Short).value;
-    const dataVersion = ((tag as any).get('DataVersion') as Int).value;
+    const width = (tag.get('Width') as Short).value;
+    const height = (tag.get('Height') as Short).value;
+    const length = (tag.get('Length') as Short).value;
+    const dataVersion = (tag.get('DataVersion') as Int).value;
 
     const palette = new Map<number, Block>();
     // eslint-disable-next-line prefer-const

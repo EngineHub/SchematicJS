@@ -93,3 +93,5 @@ export interface Block {
     type: string;
     properties: { [property: string]: string };
 }
+
+export type SchematicType = 'sponge' | 'structure';
