@@ -30,14 +30,18 @@ export function loadStructure(tag: TagMap): Schematic {
         }
 
         const properties = {};
-        for (const [property, value] of (
-            paletteEntry.get('Properties') as TagMap
-        ).entries()) {
-            properties[property] = value;
+        const propertiesTag = paletteEntry.get('Properties');
+        if (propertiesTag) {
+            for (const [property, value] of (
+                propertiesTag as TagMap
+            ).entries()) {
+                properties[property] = value;
+            }
         }
 
-        palette.set(paletteIndex as unknown as number, { type, properties });
+        palette.set(parseInt(paletteIndex), { type, properties });
     }
+    console.log(palette);
 
     const schematic = new Schematic({
         width,
