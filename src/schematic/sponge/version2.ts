@@ -1,4 +1,5 @@
 import { Int, Short, TagMap } from 'nbt-ts';
+import { tagToRecord } from '../../util/nbt';
 import { Block, Schematic } from '../types';
 
 const DEFAULT_DV = 1913;
@@ -12,6 +13,7 @@ export function loadVersion2(tag: TagMap): Schematic {
     const dataVersion = dvTag
         ? (tag.get('DataVersion') as Int).value
         : DEFAULT_DV;
+    const metadataTag = tag.get('Metadata') as TagMap;
 
     const palette = new Map<number, Block>();
     // eslint-disable-next-line prefer-const
@@ -43,12 +45,17 @@ export function loadVersion2(tag: TagMap): Schematic {
         palette.set((value as Int).value, { type, properties });
     }
 
+    const metadata: Record<string, unknown> = metadataTag
+        ? tagToRecord(metadataTag)
+        : {};
+
     const schematic = new Schematic({
         width,
         height,
         length,
         blockTypes: [...palette.values()],
-        dataVersion
+        dataVersion,
+        metadata
     });
     let index = 0;
     let i = 0;

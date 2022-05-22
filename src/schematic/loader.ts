@@ -6,7 +6,7 @@ import { loadStructure } from './structure';
 
 /**
  * Load a schematic given an NBT Tag.
- * 
+ *
  * @param tag The tag
  * @param type The schematic type, or undefined to auto-detect.
  * @returns A {@link Schematic}.
