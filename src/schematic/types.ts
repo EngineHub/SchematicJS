@@ -7,6 +7,10 @@ interface SchematicOptions {
     blockTypes: Block[];
     dataVersion?: number;
     metadata?: Record<string, unknown>;
+    format: {
+        type: SchematicType;
+        version?: number;
+    };
 }
 
 export class Schematic implements Iterable<BlockVector3> {
@@ -17,6 +21,10 @@ export class Schematic implements Iterable<BlockVector3> {
     blockTypes: Block[];
     dataVersion?: number;
     metadata: Record<string, unknown>;
+    format: {
+        type: SchematicType;
+        version?: number;
+    };
 
     constructor({
         width,
@@ -24,7 +32,8 @@ export class Schematic implements Iterable<BlockVector3> {
         length,
         blockTypes,
         dataVersion,
-        metadata = {}
+        metadata = {},
+        format
     }: SchematicOptions) {
         this.width = width;
         this.height = height;
@@ -32,6 +41,7 @@ export class Schematic implements Iterable<BlockVector3> {
         this.blockTypes = blockTypes;
         this.dataVersion = dataVersion;
         this.metadata = metadata;
+        this.format = format;
 
         this.blocks = make3DArray(width, height, length);
     }

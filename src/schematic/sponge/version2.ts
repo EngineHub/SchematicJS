@@ -55,7 +55,11 @@ export function loadVersion2(tag: TagMap): Schematic {
         length,
         blockTypes: [...palette.values()],
         dataVersion,
-        metadata
+        metadata,
+        format: {
+            type: 'sponge',
+            version: (tag.get('Version') as Int).value
+        }
     });
     let index = 0;
     let i = 0;

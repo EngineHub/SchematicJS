@@ -47,7 +47,10 @@ export function loadStructure(tag: TagMap): Schematic {
         height,
         length,
         blockTypes: [...palette.values()],
-        dataVersion
+        dataVersion,
+        format: {
+            type: 'structure'
+        }
     });
     for (const block of blocks) {
         const state = ((block as TagMap).get('state') as Int).value;
