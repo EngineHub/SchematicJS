@@ -108,4 +108,4 @@ export interface Block {
     properties: { [property: string]: string };
 }
 
-export type SchematicType = 'sponge' | 'structure';
+export type SchematicType = 'sponge' | 'structure' | 'mcedit';

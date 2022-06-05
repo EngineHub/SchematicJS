@@ -3,6 +3,7 @@ import { Int, TagMap } from 'nbt-ts';
 import { loadVersion2, loadVersion3 } from './sponge';
 import { SchematicType } from '.';
 import { loadStructure } from './structure';
+import { loadMCEditAlpha } from './mcedit';
 
 /**
  * Load a schematic given an NBT Tag.
@@ -13,7 +14,9 @@ import { loadStructure } from './structure';
  */
 export function loadSchematic(tag: TagMap, type?: SchematicType): Schematic {
     if (!type) {
-        if (tag.get('BlockData') || tag.get('Blocks')) {
+        if (tag.get('Materials')) {
+            type = 'mcedit';
+        } else if (tag.get('BlockData') || tag.get('Blocks')) {
             type = 'sponge';
         } else if (tag.get('blocks')) {
             type = 'structure';
@@ -30,14 +33,23 @@ export function loadSchematic(tag: TagMap, type?: SchematicType): Schematic {
                 case 3:
                     return loadVersion3(tag);
                 default:
-                    throw new Error('Unsupported schematic version.');
+                    throw new Error('Unsupported Sponge schematic version.');
             }
         }
         case 'structure': {
             return loadStructure(tag);
         }
+        case 'mcedit': {
+            const version = tag.get('Materials') as string;
+            switch (version) {
+                case 'Alpha':
+                    return loadMCEditAlpha(tag);
+                default:
+                    throw new Error('Unsupported MCEdit schematic version.');
+            }
+        }
         default: {
-            throw new Error('Unknown schematic format.');
+            throw new Error('Unsupported schematic format.');
         }
     }
 }

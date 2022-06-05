@@ -11,7 +11,8 @@
         "target": "es5",
         "allowJs": true,
         "declaration": true,
-        "noEmit": true
+        "noEmit": true,
+        "resolveJsonModule": true
     },
     "exclude": ["node_modules", "dist"]
 }

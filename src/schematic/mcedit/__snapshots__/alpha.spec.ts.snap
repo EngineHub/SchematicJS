@@ -1,0 +1,910 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loadMCEditAlpha should load a MCEdit Alpha schematic 1`] = `
+Schematic {
+  "blockTypes": Array [
+    Object {
+      "properties": Object {},
+      "type": "stone",
+    },
+    Object {
+      "properties": Object {
+        "delay": "1",
+        "facing": "west",
+        "locked": "false",
+        "powered": "false",
+      },
+      "type": "repeater",
+    },
+    Object {
+      "properties": Object {},
+      "type": "air",
+    },
+    Object {
+      "properties": Object {},
+      "type": "stone_bricks",
+    },
+    Object {
+      "properties": Object {
+        "extended": "false",
+        "facing": "east",
+      },
+      "type": "piston",
+    },
+    Object {
+      "properties": Object {},
+      "type": "glass",
+    },
+    Object {
+      "properties": Object {
+        "rotation": "11",
+      },
+      "type": "sign",
+    },
+    Object {
+      "properties": Object {
+        "delay": "4",
+        "facing": "north",
+        "locked": "false",
+        "powered": "false",
+      },
+      "type": "repeater",
+    },
+    Object {
+      "properties": Object {
+        "east": "none",
+        "north": "none",
+        "power": "0",
+        "south": "none",
+        "west": "none",
+      },
+      "type": "redstone_wire",
+    },
+    Object {
+      "properties": Object {
+        "has_record": "false",
+      },
+      "type": "jukebox",
+    },
+    Object {
+      "properties": Object {
+        "extended": "false",
+        "facing": "east",
+      },
+      "type": "sticky_piston",
+    },
+    Object {
+      "properties": Object {
+        "delay": "4",
+        "facing": "south",
+        "locked": "false",
+        "powered": "false",
+      },
+      "type": "repeater",
+    },
+    Object {
+      "properties": Object {
+        "rotation": "15",
+      },
+      "type": "sign",
+    },
+    Object {
+      "properties": Object {
+        "delay": "1",
+        "facing": "north",
+        "locked": "false",
+        "powered": "false",
+      },
+      "type": "repeater",
+    },
+    Object {
+      "properties": Object {
+        "extended": "false",
+        "facing": "west",
+      },
+      "type": "sticky_piston",
+    },
+    Object {
+      "properties": Object {
+        "facing": "south",
+        "type": "single",
+      },
+      "type": "chest",
+    },
+    Object {
+      "properties": Object {
+        "rotation": "0",
+      },
+      "type": "sign",
+    },
+    Object {
+      "properties": Object {
+        "enabled": "false",
+        "facing": "south",
+      },
+      "type": "hopper",
+    },
+    Object {
+      "properties": Object {
+        "facing": "west",
+        "triggered": "true",
+      },
+      "type": "dropper",
+    },
+    Object {
+      "properties": Object {
+        "delay": "1",
+        "facing": "south",
+        "locked": "false",
+        "powered": "false",
+      },
+      "type": "repeater",
+    },
+    Object {
+      "properties": Object {
+        "extended": "false",
+        "facing": "south",
+      },
+      "type": "piston",
+    },
+    Object {
+      "properties": Object {
+        "facing": "north",
+      },
+      "type": "wall_torch",
+    },
+    Object {
+      "properties": Object {
+        "rotation": "8",
+      },
+      "type": "sign",
+    },
+  ],
+  "blocks": Array [
+    Array [
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {
+            "delay": "1",
+            "facing": "west",
+            "locked": "false",
+            "powered": "false",
+          },
+          "type": "repeater",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "extended": "false",
+            "facing": "east",
+          },
+          "type": "piston",
+        },
+        Object {
+          "properties": Object {},
+          "type": "glass",
+        },
+        Object {
+          "properties": Object {},
+          "type": "glass",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "rotation": "11",
+          },
+          "type": "sign",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+      ],
+    ],
+    Array [
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {
+            "delay": "4",
+            "facing": "north",
+            "locked": "false",
+            "powered": "false",
+          },
+          "type": "repeater",
+        },
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "has_record": "false",
+          },
+          "type": "jukebox",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "extended": "false",
+            "facing": "east",
+          },
+          "type": "sticky_piston",
+        },
+        Object {
+          "properties": Object {
+            "delay": "4",
+            "facing": "south",
+            "locked": "false",
+            "powered": "false",
+          },
+          "type": "repeater",
+        },
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "rotation": "15",
+          },
+          "type": "sign",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+      ],
+    ],
+    Array [
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+        Object {
+          "properties": Object {
+            "delay": "1",
+            "facing": "north",
+            "locked": "false",
+            "powered": "false",
+          },
+          "type": "repeater",
+        },
+        Object {
+          "properties": Object {
+            "extended": "false",
+            "facing": "west",
+          },
+          "type": "sticky_piston",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "facing": "south",
+            "type": "single",
+          },
+          "type": "chest",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "rotation": "0",
+          },
+          "type": "sign",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+      ],
+    ],
+    Array [
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+        Object {
+          "properties": Object {},
+          "type": "stone_bricks",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "glass",
+        },
+        Object {
+          "properties": Object {
+            "enabled": "false",
+            "facing": "south",
+          },
+          "type": "hopper",
+        },
+        Object {
+          "properties": Object {
+            "facing": "west",
+            "triggered": "true",
+          },
+          "type": "dropper",
+        },
+        Object {
+          "properties": Object {
+            "delay": "1",
+            "facing": "south",
+            "locked": "false",
+            "powered": "false",
+          },
+          "type": "repeater",
+        },
+        Object {
+          "properties": Object {
+            "east": "none",
+            "north": "none",
+            "power": "0",
+            "south": "none",
+            "west": "none",
+          },
+          "type": "redstone_wire",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "extended": "false",
+            "facing": "south",
+          },
+          "type": "piston",
+        },
+        Object {
+          "properties": Object {
+            "facing": "south",
+            "type": "single",
+          },
+          "type": "chest",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "facing": "north",
+          },
+          "type": "wall_torch",
+        },
+      ],
+      Array [
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {
+            "rotation": "8",
+          },
+          "type": "sign",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+        Object {
+          "properties": Object {},
+          "type": "air",
+        },
+      ],
+    ],
+  ],
+  "dataVersion": undefined,
+  "format": Object {
+    "type": "mcedit",
+    "version": 1,
+  },
+  "height": 5,
+  "length": 7,
+  "metadata": Object {},
+  "width": 4,
+}
+`;
