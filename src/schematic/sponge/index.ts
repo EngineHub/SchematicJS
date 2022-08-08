@@ -1,2 +1,2 @@
-export * from './version2';
-export * from './version3';
+export * from './version2.js';
+export * from './version3.js';

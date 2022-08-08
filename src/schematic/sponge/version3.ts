@@ -1,6 +1,7 @@
-import { Int, Short, TagMap } from 'nbt-ts';
-import { tagToRecord } from '../../util/nbt';
-import { Block, Schematic } from '../types';
+import type { Int, Short, TagMap } from 'nbt-ts';
+import { tagToRecord } from '../../util/nbt.js';
+import type { Block } from '../types.js';
+import { Schematic } from '../types.js';
 
 export function loadVersion3(tag: TagMap): Schematic {
     const blocksContainer = tag.get('Blocks') as TagMap;

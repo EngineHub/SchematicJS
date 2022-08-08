@@ -1,9 +1,9 @@
-import { Schematic } from './types';
-import { Int, TagMap } from 'nbt-ts';
-import { loadVersion2, loadVersion3 } from './sponge';
-import { SchematicType } from '.';
-import { loadStructure } from './structure';
-import { loadMCEditAlpha } from './mcedit';
+import type { Schematic } from './types.js';
+import type { Int, TagMap } from 'nbt-ts';
+import { loadVersion2, loadVersion3 } from './sponge/index.js';
+import type { SchematicType } from './index.js';
+import { loadStructure } from './structure/index.js';
+import { loadMCEditAlpha } from './mcedit/index.js';
 
 /**
  * Load a schematic given an NBT Tag.

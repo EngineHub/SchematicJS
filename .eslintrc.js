@@ -15,5 +15,14 @@ module.exports = {
         project: path.resolve(__dirname, './tsconfig.base.json'),
         tsconfigRootDir: __dirname
     },
-    rules: {}
+    rules: {
+        '@typescript-eslint/consistent-type-imports': [
+            'error',
+            { prefer: 'type-imports' }
+        ],
+        '@typescript-eslint/consistent-type-exports': [
+            'error',
+            { fixMixedExportsWithInlineTypeSpecifier: true }
+        ]
+    }
 };

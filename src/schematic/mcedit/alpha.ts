@@ -1,5 +1,6 @@
-import { TagMap, Int } from 'nbt-ts';
-import { Schematic, Block } from '../types';
+import type { TagMap, Int } from 'nbt-ts';
+import type { Block } from '../types.js';
+import { Schematic } from '../types.js';
 import legacyMapper from './legacy.json';
 
 export function loadMCEditAlpha(tag: TagMap): Schematic {

@@ -1,4 +1,5 @@
-import { Byte, Short, TagMap } from 'nbt-ts';
+import type { TagMap } from 'nbt-ts';
+import { Byte, Short } from 'nbt-ts';
 import { tagToRecord } from './nbt';
 
 describe('tagToRecord', () => {

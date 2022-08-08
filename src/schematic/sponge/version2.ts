@@ -1,6 +1,7 @@
-import { Int, Short, TagMap } from 'nbt-ts';
-import { tagToRecord } from '../../util/nbt';
-import { Block, Schematic } from '../types';
+import type { Int, Short, TagMap } from 'nbt-ts';
+import { tagToRecord } from '../../util/nbt.js';
+import type { Block } from '../types.js';
+import { Schematic } from '../types.js';
 
 const DEFAULT_DV = 1913;
 

@@ -1,5 +1,6 @@
-import { Int, TagArray, TagMap } from 'nbt-ts';
-import { Block, Schematic } from '../types';
+import type { Int, TagArray, TagMap } from 'nbt-ts';
+import type { Block } from '../types.js';
+import { Schematic } from '../types.js';
 
 const DEFAULT_DV = 1913;
 

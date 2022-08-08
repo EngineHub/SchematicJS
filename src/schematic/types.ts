@@ -1,4 +1,4 @@
-import { make3DArray } from '../util/array';
+import { make3DArray } from '../util/array.js';
 
 interface SchematicOptions {
     width: number;

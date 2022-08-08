@@ -1,1 +1,1 @@
-export * from './alpha';
+export * from './alpha.js';
