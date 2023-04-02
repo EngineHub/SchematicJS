@@ -2,13 +2,13 @@
 
 exports[`loadMCEditAlpha should load a MCEdit Alpha schematic 1`] = `
 Schematic {
-  "blockTypes": Array [
-    Object {
-      "properties": Object {},
+  "blockTypes": [
+    {
+      "properties": {},
       "type": "stone",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "delay": "1",
         "facing": "west",
         "locked": "false",
@@ -16,33 +16,33 @@ Schematic {
       },
       "type": "repeater",
     },
-    Object {
-      "properties": Object {},
+    {
+      "properties": {},
       "type": "air",
     },
-    Object {
-      "properties": Object {},
+    {
+      "properties": {},
       "type": "stone_bricks",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "extended": "false",
         "facing": "east",
       },
       "type": "piston",
     },
-    Object {
-      "properties": Object {},
+    {
+      "properties": {},
       "type": "glass",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "rotation": "11",
       },
       "type": "sign",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "delay": "4",
         "facing": "north",
         "locked": "false",
@@ -50,8 +50,8 @@ Schematic {
       },
       "type": "repeater",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "east": "none",
         "north": "none",
         "power": "0",
@@ -60,21 +60,21 @@ Schematic {
       },
       "type": "redstone_wire",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "has_record": "false",
       },
       "type": "jukebox",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "extended": "false",
         "facing": "east",
       },
       "type": "sticky_piston",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "delay": "4",
         "facing": "south",
         "locked": "false",
@@ -82,14 +82,14 @@ Schematic {
       },
       "type": "repeater",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "rotation": "15",
       },
       "type": "sign",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "delay": "1",
         "facing": "north",
         "locked": "false",
@@ -97,42 +97,42 @@ Schematic {
       },
       "type": "repeater",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "extended": "false",
         "facing": "west",
       },
       "type": "sticky_piston",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "facing": "south",
         "type": "single",
       },
       "type": "chest",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "rotation": "0",
       },
       "type": "sign",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "enabled": "false",
         "facing": "south",
       },
       "type": "hopper",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "facing": "west",
         "triggered": "true",
       },
       "type": "dropper",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "delay": "1",
         "facing": "south",
         "locked": "false",
@@ -140,61 +140,61 @@ Schematic {
       },
       "type": "repeater",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "extended": "false",
         "facing": "south",
       },
       "type": "piston",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "facing": "north",
       },
       "type": "wall_torch",
     },
-    Object {
-      "properties": Object {
+    {
+      "properties": {
         "rotation": "8",
       },
       "type": "sign",
     },
   ],
-  "blocks": Array [
-    Array [
-      Array [
-        Object {
-          "properties": Object {},
+  "blocks": [
+    [
+      [
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {
+      [
+        {
+          "properties": {
             "delay": "1",
             "facing": "west",
             "locked": "false",
@@ -202,165 +202,165 @@ Schematic {
           },
           "type": "repeater",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "extended": "false",
             "facing": "east",
           },
           "type": "piston",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "glass",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "glass",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "rotation": "11",
           },
           "type": "sign",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
       ],
     ],
-    Array [
-      Array [
-        Object {
-          "properties": Object {},
+    [
+      [
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "delay": "4",
             "facing": "north",
             "locked": "false",
@@ -368,8 +368,8 @@ Schematic {
           },
           "type": "repeater",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -378,8 +378,8 @@ Schematic {
           },
           "type": "redstone_wire",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -388,22 +388,22 @@ Schematic {
           },
           "type": "redstone_wire",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {
+      [
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -412,29 +412,29 @@ Schematic {
           },
           "type": "redstone_wire",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "has_record": "false",
           },
           "type": "jukebox",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "extended": "false",
             "facing": "east",
           },
           "type": "sticky_piston",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "delay": "4",
             "facing": "south",
             "locked": "false",
@@ -442,8 +442,8 @@ Schematic {
           },
           "type": "repeater",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -453,115 +453,115 @@ Schematic {
           "type": "redstone_wire",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "rotation": "15",
           },
           "type": "sign",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
       ],
     ],
-    Array [
-      Array [
-        Object {
-          "properties": Object {},
+    [
+      [
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -570,8 +570,8 @@ Schematic {
           },
           "type": "redstone_wire",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -580,8 +580,8 @@ Schematic {
           },
           "type": "redstone_wire",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -590,14 +590,14 @@ Schematic {
           },
           "type": "redstone_wire",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {
+      [
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -606,8 +606,8 @@ Schematic {
           },
           "type": "redstone_wire",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "delay": "1",
             "facing": "north",
             "locked": "false",
@@ -615,30 +615,30 @@ Schematic {
           },
           "type": "repeater",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "extended": "false",
             "facing": "west",
           },
           "type": "sticky_piston",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "facing": "south",
             "type": "single",
           },
           "type": "chest",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -648,133 +648,133 @@ Schematic {
           "type": "redstone_wire",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "rotation": "0",
           },
           "type": "sign",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
       ],
     ],
-    Array [
-      Array [
-        Object {
-          "properties": Object {},
+    [
+      [
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "stone_bricks",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {
+      [
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -783,30 +783,30 @@ Schematic {
           },
           "type": "redstone_wire",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "glass",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "enabled": "false",
             "facing": "south",
           },
           "type": "hopper",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "facing": "west",
             "triggered": "true",
           },
           "type": "dropper",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "delay": "1",
             "facing": "south",
             "locked": "false",
@@ -814,8 +814,8 @@ Schematic {
           },
           "type": "repeater",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "east": "none",
             "north": "none",
             "power": "0",
@@ -825,86 +825,86 @@ Schematic {
           "type": "redstone_wire",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "extended": "false",
             "facing": "south",
           },
           "type": "piston",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "facing": "south",
             "type": "single",
           },
           "type": "chest",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "facing": "north",
           },
           "type": "wall_torch",
         },
       ],
-      Array [
-        Object {
-          "properties": Object {},
+      [
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {
+        {
+          "properties": {
             "rotation": "8",
           },
           "type": "sign",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
-        Object {
-          "properties": Object {},
+        {
+          "properties": {},
           "type": "air",
         },
       ],
     ],
   ],
   "dataVersion": undefined,
-  "format": Object {
+  "format": {
     "type": "mcedit",
     "version": 1,
   },
   "height": 5,
   "length": 7,
-  "metadata": Object {},
+  "metadata": {},
   "width": 4,
 }
 `;

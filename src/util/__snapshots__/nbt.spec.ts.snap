@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`tagToRecord should convert arrays 1`] = `
-Object {
-  "byte": Array [
+{
+  "byte": [
     1,
     2,
   ],
-  "short": Array [
+  "short": [
     1,
     2,
     3,
   ],
-  "string": Array [
+  "string": [
     "string",
     "string2",
   ],
@@ -19,12 +19,12 @@ Object {
 `;
 
 exports[`tagToRecord should convert objects 1`] = `
-Object {
-  "byte": Object {
+{
+  "byte": {
     "a": 1,
     "b": 2,
   },
-  "string": Object {
+  "string": {
     "a": "string",
     "b": "string2",
   },
@@ -32,7 +32,7 @@ Object {
 `;
 
 exports[`tagToRecord should convert primitives 1`] = `
-Object {
+{
   "byte": 1,
   "short": 2,
   "string": "string",
