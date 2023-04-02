@@ -14,6 +14,10 @@ import { loadMCEditAlpha } from './mcedit/index.js';
  */
 export function loadSchematic(tag: TagMap, type?: SchematicType): Schematic {
     if (!type) {
+        if (tag.get('Schematic') && tag.size === 1) {
+            // Unwrap Sponge version 3 schematics.
+            tag = tag.get('Schematic') as TagMap;
+        }
         if (tag.get('Materials')) {
             type = 'mcedit';
         } else if (tag.get('BlockData') || tag.get('Blocks')) {
