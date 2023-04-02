@@ -1,6 +1,6 @@
 {
     "name": "@enginehub/schematicjs",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "A TypeScript/JavaScript library for loading and saving WorldEdit schematics",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
