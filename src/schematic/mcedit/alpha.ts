@@ -1,4 +1,4 @@
-import type { TagMap, Int } from 'nbt-ts';
+import type { TagMap, Int } from '@enginehub/nbt-ts';
 import type { Block } from '../types.js';
 import { Schematic } from '../types.js';
 import legacyMapper from './legacy.json';

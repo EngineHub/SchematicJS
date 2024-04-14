@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { TagMap } from 'nbt-ts';
-import { decode } from 'nbt-ts';
+import type { TagMap } from '@enginehub/nbt-ts';
+import { decode } from '@enginehub/nbt-ts';
 import { loadMCEditAlpha } from './alpha';
 import { unzip } from 'gzip-js';
 

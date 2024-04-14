@@ -1,5 +1,5 @@
 import type { Schematic } from './types.js';
-import type { Int, TagMap } from 'nbt-ts';
+import type { Int, TagMap } from '@enginehub/nbt-ts';
 import { loadVersion2, loadVersion3 } from './sponge/index.js';
 import type { SchematicType } from './index.js';
 import { loadStructure } from './structure/index.js';

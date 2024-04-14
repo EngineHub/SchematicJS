@@ -299,6 +299,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@enginehub/nbt-ts@^1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@enginehub/nbt-ts/-/nbt-ts-1.3.5.tgz#0e55e1a286e80d75ed9374bb6d9fa6d310709e7e"
+  integrity sha512-ijqrXyRKjc/iqMyhjtLU3lIHJqOoQ8hcTMnSYw6G7uhBByrjAb4sml5Xrak3dekpewWin+4RThsvcg0QollZLA==
+
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/@eslint-community/eslint-utils/-/eslint-utils-4.4.0.tgz#a23514e8fb9af1269d5f7788aa556798d61c6b59"
@@ -2355,11 +2360,6 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
-
-nbt-ts@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/nbt-ts/-/nbt-ts-1.3.5.tgz#6123f49cf6e3d81a3964b3cc3af7b5f678c958ec"
-  integrity sha512-bThJvXfmiqyX4P9q7uNwaXx3f6FpcynT9mYrMkoP/Axq8oIMzjYmA/9Q0nCVNLZ2dCZnnhWDQAf6C78TOuW93Q==
 
 node-int64@^0.4.0:
   version "0.4.0"

@@ -1,4 +1,4 @@
-import type { Int, Short, TagMap } from 'nbt-ts';
+import type { Int, Short, TagMap } from '@enginehub/nbt-ts';
 import { tagToRecord } from '../../util/nbt.js';
 import type { Block } from '../types.js';
 import { Schematic } from '../types.js';

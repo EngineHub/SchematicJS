@@ -6,8 +6,8 @@ import type {
     TagArray,
     TagMap,
     TagObject
-} from 'nbt-ts';
-import { getTagType, TagType } from 'nbt-ts';
+} from '@enginehub/nbt-ts';
+import { getTagType, TagType } from '@enginehub/nbt-ts';
 
 export function normaliseCompoundToObject(tag: TagObject | TagMap): TagObject {
     if (tag instanceof Map) {

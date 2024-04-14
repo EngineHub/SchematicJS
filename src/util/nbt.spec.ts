@@ -1,5 +1,5 @@
-import type { TagMap } from 'nbt-ts';
-import { Byte, Short } from 'nbt-ts';
+import type { TagMap } from '@enginehub/nbt-ts';
+import { Byte, Short } from '@enginehub/nbt-ts';
 import { tagToRecord } from './nbt';
 
 describe('tagToRecord', () => {
