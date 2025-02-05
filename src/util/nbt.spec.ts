@@ -1,6 +1,7 @@
 import type { TagMap } from '@enginehub/nbt-ts';
 import { Byte, Short } from '@enginehub/nbt-ts';
 import { tagToRecord } from './nbt';
+import { describe, it, expect } from 'vitest';
 
 describe('tagToRecord', () => {
     it('should convert primitives', () => {

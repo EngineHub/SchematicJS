@@ -3,6 +3,7 @@ import type { TagMap } from '@enginehub/nbt-ts';
 import { decode } from '@enginehub/nbt-ts';
 import { loadMCEditAlpha } from './alpha';
 import { unzip } from 'gzip-js';
+import { describe, it, expect } from 'vitest';
 
 function parseNbt(nbt: Uint8Array): TagMap {
     const deflated = unzip(nbt);

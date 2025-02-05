@@ -68,7 +68,6 @@ export function loadVersion2(tag: TagMap): Schematic {
         let value = 0;
         let varintLength = 0;
 
-        // eslint-disable-next-line no-constant-condition
         while (true) {
             value |= (blocks[i] & 127) << (varintLength++ * 7);
             if (varintLength > 5) {

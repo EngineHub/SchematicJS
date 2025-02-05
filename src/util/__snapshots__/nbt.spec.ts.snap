@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`tagToRecord should convert arrays 1`] = `
+exports[`tagToRecord > should convert arrays 1`] = `
 {
   "byte": [
     1,
@@ -18,7 +18,7 @@ exports[`tagToRecord should convert arrays 1`] = `
 }
 `;
 
-exports[`tagToRecord should convert objects 1`] = `
+exports[`tagToRecord > should convert objects 1`] = `
 {
   "byte": {
     "a": 1,
@@ -31,7 +31,7 @@ exports[`tagToRecord should convert objects 1`] = `
 }
 `;
 
-exports[`tagToRecord should convert primitives 1`] = `
+exports[`tagToRecord > should convert primitives 1`] = `
 {
   "byte": 1,
   "short": 2,

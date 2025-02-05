@@ -1,10 +1,18 @@
 {
-    "extends": "./tsconfig.base.json",
     "include": ["src/**/*"],
     "compilerOptions": {
-        "noEmit": false,
-        "outDir": "dist/esm",
-        "module": "esnext"
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "esModuleInterop": true,
+        "downlevelIteration": true,
+        "module": "commonjs",
+        "lib": ["es2017", "es7", "es6", "dom"],
+        "target": "es6",
+        "allowJs": true,
+        "declaration": true,
+        "noEmit": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true
     },
-    "exclude": ["node_modules", "dist", "src/**/*.spec.ts"]
+    "exclude": ["node_modules", "dist"]
 }
