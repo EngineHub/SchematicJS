@@ -1,12 +1,54 @@
 import type { Int, Short, TagMap } from '@enginehub/nbt-ts';
 import { tagToRecord } from '../../util/nbt.js';
-import type { Block } from '../types.js';
-import { Schematic } from '../types.js';
+import { type Biome, Schematic } from '../types.js';
+import {
+    readBiomePalette,
+    readBlockPalette,
+    readBlockVarintToSchematic
+} from './common.js';
 
 const DEFAULT_DV = 1913;
 
+function readBiomeVarintToSchematic(
+    biomes: Buffer<ArrayBufferLike>,
+    biomePalette: Map<number, Biome>,
+    schematic: Schematic
+): void {
+    const { width, height } = schematic;
+
+    let index = 0;
+    let i = 0;
+    while (i < biomes.length) {
+        let value = 0;
+        let varintLength = 0;
+
+        while (true) {
+            value |= (biomes[i] & 127) << (varintLength++ * 7);
+            if (varintLength > 5) {
+                throw new Error('VarInt too big');
+            }
+            if ((biomes[i] & 128) != 128) {
+                i++;
+                break;
+            }
+            i++;
+        }
+
+        const z = Math.floor((index % width) / width);
+        const x = (index % width) % width;
+
+        index++;
+
+        const biome = biomePalette.get(value);
+        for (let y = 0; y < height; y++) {
+            schematic.setBiome({ x, y, z }, biome);
+        }
+    }
+}
+
 export function loadVersion2(tag: TagMap): Schematic {
     const blocks = tag.get('BlockData') as Buffer;
+    const biomes = tag.get('BiomeData') as Buffer;
     const width = (tag.get('Width') as Short).value;
     const height = (tag.get('Height') as Short).value;
     const length = (tag.get('Length') as Short).value;
@@ -16,35 +58,8 @@ export function loadVersion2(tag: TagMap): Schematic {
         : DEFAULT_DV;
     const metadataTag = tag.get('Metadata') as TagMap;
 
-    const palette = new Map<number, Block>();
-    // eslint-disable-next-line prefer-const
-    for (let [key, value] of (tag.get('Palette') as TagMap).entries()) {
-        // sanitize the block name
-        const colonIndex = key.indexOf(':');
-        if (colonIndex !== -1) {
-            key = key.substring(colonIndex + 1);
-        }
-
-        const properties = {};
-
-        const bracketIndex = key.indexOf('[');
-        let type: string;
-        if (bracketIndex !== -1) {
-            type = key.substring(0, bracketIndex);
-            const propertyArea = key.substring(
-                bracketIndex + 1,
-                key.length - 1
-            ) as string;
-            propertyArea.split(',').forEach(prop => {
-                const pair = prop.split('=');
-                properties[pair[0]] = pair[1];
-            });
-        } else {
-            type = key;
-        }
-
-        palette.set((value as Int).value, { type, properties });
-    }
+    const blockPalette = readBlockPalette(tag.get('Palette') as TagMap);
+    const biomePalette = readBiomePalette(tag.get('BiomePalette') as TagMap);
 
     const metadata: Record<string, unknown> = metadataTag
         ? tagToRecord(metadataTag)
@@ -54,7 +69,8 @@ export function loadVersion2(tag: TagMap): Schematic {
         width,
         height,
         length,
-        blockTypes: [...palette.values()],
+        blockTypes: [...blockPalette.values()],
+        biomeTypes: [...biomePalette.values()],
         dataVersion,
         metadata,
         format: {
@@ -62,32 +78,10 @@ export function loadVersion2(tag: TagMap): Schematic {
             version: (tag.get('Version') as Int).value
         }
     });
-    let index = 0;
-    let i = 0;
-    while (i < blocks.length) {
-        let value = 0;
-        let varintLength = 0;
 
-        while (true) {
-            value |= (blocks[i] & 127) << (varintLength++ * 7);
-            if (varintLength > 5) {
-                throw new Error('VarInt too big');
-            }
-            if ((blocks[i] & 128) != 128) {
-                i++;
-                break;
-            }
-            i++;
-        }
-
-        const y = Math.floor(index / (width * length));
-        const z = Math.floor((index % (width * length)) / width);
-        const x = (index % (width * length)) % width;
-
-        index++;
-
-        const block = palette.get(value);
-        schematic.setBlock({ x, y, z }, block);
+    readBlockVarintToSchematic(blocks, blockPalette, schematic);
+    if (biomes) {
+        readBiomeVarintToSchematic(biomes, biomePalette, schematic);
     }
 
     return schematic;

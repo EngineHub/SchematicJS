@@ -5,6 +5,7 @@ interface SchematicOptions {
     height: number;
     length: number;
     blockTypes: Block[];
+    biomeTypes?: Biome[];
     dataVersion?: number;
     metadata?: Record<string, unknown>;
     format: {
@@ -19,6 +20,8 @@ export class Schematic implements Iterable<BlockVector3> {
     length: number;
     blocks: Block[][][];
     blockTypes: Block[];
+    biomes?: Biome[][][];
+    biomeTypes: Biome[];
     dataVersion?: number;
     metadata: Record<string, unknown>;
     format: {
@@ -31,6 +34,7 @@ export class Schematic implements Iterable<BlockVector3> {
         height,
         length,
         blockTypes,
+        biomeTypes = [],
         dataVersion,
         metadata = {},
         format
@@ -39,11 +43,16 @@ export class Schematic implements Iterable<BlockVector3> {
         this.height = height;
         this.length = length;
         this.blockTypes = blockTypes;
+        this.biomeTypes = biomeTypes;
         this.dataVersion = dataVersion;
         this.metadata = metadata;
         this.format = format;
 
         this.blocks = make3DArray(width, height, length);
+        this.biomes =
+            this.biomeTypes.length === 0
+                ? undefined
+                : make3DArray(width, height, length);
     }
 
     contains(pos: BlockVector3): boolean {
@@ -69,6 +78,20 @@ export class Schematic implements Iterable<BlockVector3> {
             return;
         }
         this.blocks[pos.x][pos.y][pos.z] = block;
+    }
+
+    getBiome(pos: BlockVector3): Biome | undefined {
+        if (!this.contains(pos) || !this.biomes) {
+            return undefined;
+        }
+        return this.biomes[pos.x][pos.y][pos.z];
+    }
+
+    setBiome(pos: BlockVector3, biome: Biome): void {
+        if (!this.contains(pos) || !this.biomes) {
+            return;
+        }
+        this.biomes[pos.x][pos.y][pos.z] = biome;
     }
 
     [Symbol.iterator](): Iterator<BlockVector3> {
@@ -103,9 +126,14 @@ export interface BlockVector3 {
     z: number;
 }
 
-export interface Block {
+interface Keyed {
     type: string;
+}
+
+export interface Block extends Keyed {
     properties: { [property: string]: string };
 }
+
+export type Biome = Keyed;
 
 export type SchematicType = 'sponge' | 'structure' | 'mcedit';

@@ -2,6 +2,8 @@
 
 exports[`loadMCEditAlpha > should load a MCEdit Alpha schematic 1`] = `
 Schematic {
+  "biomeTypes": [],
+  "biomes": undefined,
   "blockTypes": [
     {
       "properties": {},
